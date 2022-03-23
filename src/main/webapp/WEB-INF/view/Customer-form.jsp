@@ -24,7 +24,7 @@
 
 	<div class="container">
 
-		<h3>Customer Directory</h3>
+		<h3>Customer Relationship Management</h3>
 		<hr>
 
 		<p class="h4 mb-4">Customer</p>
@@ -36,7 +36,7 @@
 
 			<div class="form-inline">
 				<input type="text" name="firstName" value="${Customer.firstName}"
-					class="form-control mb-4 col-4" placeholder="FristName">
+					class="form-control mb-4 col-4" placeholder="FirstName">
 
 
 
@@ -53,8 +53,8 @@
 
 			<div class="form-inline">
 
-				<input type="text" name="email" value="${Customer.eemmail}"
-					class="form-control mb-4 col-4" placeholder="Course">
+				<input type="text" name="email" value="${Customer.email}"
+					class="form-control mb-4 col-4" placeholder="Email">
 
 
 

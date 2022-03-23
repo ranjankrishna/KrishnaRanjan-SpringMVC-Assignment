@@ -16,14 +16,14 @@
 	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
 	crossorigin="anonymous">
 
-<title>Customer Directory</title>
+<title>Customer Relationship Management</title>
 </head>
 
 <body>
 
 	<div class="container">
 
-		<h3>Customer Directory</h3>
+		<h3>Customer Relationship Management</h3>
 		<hr>
 
 		<!-- Add a search form -->
@@ -50,7 +50,7 @@
 			</thead>
 
 			<tbody>
-				<c:forEach items="${Customers}" var="tempStudent">
+				<c:forEach items="${Customers}" var="tempCustomer">
 					<tr>
 						<td><c:out value="${tempCustomer.firstName}" /></td>
 						<td><c:out value="${tempCustomer.lastName}" /></td>

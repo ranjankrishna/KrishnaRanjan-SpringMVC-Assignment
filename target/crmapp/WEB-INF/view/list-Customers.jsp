@@ -50,7 +50,7 @@
 			</thead>
 
 			<tbody>
-				<c:forEach items="${Customers}" var="tempStudent">
+				<c:forEach items="${Customers}" var="tempCustomer">
 					<tr>
 						<td><c:out value="${tempCustomer.firstName}" /></td>
 						<td><c:out value="${tempCustomer.lastName}" /></td>

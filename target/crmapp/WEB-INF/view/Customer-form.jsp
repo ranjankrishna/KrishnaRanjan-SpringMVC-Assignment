@@ -53,8 +53,8 @@
 
 			<div class="form-inline">
 
-				<input type="text" name="email" value="${Customer.eemmail}"
-					class="form-control mb-4 col-4" placeholder="Course">
+				<input type="text" name="email" value="${Customer.email}"
+					class="form-control mb-4 col-4" placeholder="Email">
 
 
 

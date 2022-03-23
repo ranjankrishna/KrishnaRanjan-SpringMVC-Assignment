@@ -44,7 +44,7 @@ public class CustomerController {
 
 		theModel.addAttribute("Customer", theCustomer);
 
-		return "Student-form";
+		return "Customer-form";
 	}
 
 	@RequestMapping("/showFormForUpdate")
@@ -59,11 +59,11 @@ public class CustomerController {
 		theModel.addAttribute("Customer", theCustomer);
 
 		// send over to our form
-		return "Student-form";			
+		return "Customer-form";			
 	}
 
 	@PostMapping("/save")
-	public String saveCCustommer(@RequestParam("id") int id,
+	public String saveCustomer(@RequestParam("id") int id,
 			@RequestParam("firstName") String firstName,@RequestParam("lastName") String lastName,@RequestParam("email") String email) {
 
 		System.out.println(id);
@@ -88,13 +88,13 @@ public class CustomerController {
 	}
 	
 	@RequestMapping("/delete")
-	public String delete(@RequestParam("studentId") int theId) {
+	public String delete(@RequestParam("customerId") int theId) {
 
 		// delete the Book
 		customerService.deleteById(theId);
 
 		// redirect to /Books/list
-		return "redirect:/ustomer/list";
+		return "redirect:/customer/list";
 
 	}
 

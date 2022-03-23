@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
 import com.greatlearning.crmapp.entity.Customer;
 
 @Repository
-public class CustomerServiceImpl {
+public class CustomerServiceImpl implements CustomerService{
 
 	private SessionFactory sessionFactory;
 	
@@ -37,7 +37,8 @@ public class CustomerServiceImpl {
 		Transaction tx = session.beginTransaction();
 
 		// find all the records from the database table
-		List<Customer> customers=session.createQuery("from customer").list();
+//		List<Customer> customers=session.createQuery("from customer").list();
+		List<Customer> customers = session.createQuery("From Customer").list();
 		tx.commit();
 		return customers;
 	}
